@@ -35,8 +35,8 @@ client.once(Events.ClientReady, async (client) => {
   const channel = client.channels.cache.get(channelId);
   const onlineEmbed = new EmbedBuilder()
     .setTitle("Bot is online")
-    .setURL("https://google.com")
-    .setDescription("Bot is online")
+    .setURL("https://stackoverflow.com/questions/")
+    .setDescription("Looking for new questions")
     .setColor(0x00ae86)
     .setTimestamp();
   await channel.send({ embeds: [onlineEmbed] });
