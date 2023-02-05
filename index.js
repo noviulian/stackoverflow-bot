@@ -19,12 +19,12 @@ const stackoverflowTags = ["moralis", "nft", "erc20", "erc721", "erc1155"];
 
 console.log("------ task started ------");
 
-// cron task that runs every 60 minutes, gets the from the last hour
-const task = cron.schedule("*/60 * * * *", async () => {
+// cron task that runs every 30 minutes, gets the from the last hour
+const task = cron.schedule("*/30 * * * *", async () => {
   console.log("task triggered");
 
   const current = Math.floor(new Date().getTime() / 1000);
-  const pastTime = current - 60 * 60;
+  const pastTime = current - 60 * 30; // 60 seconds * 30 minutes
   console.log(pastTime);
   let questions = [];
 
