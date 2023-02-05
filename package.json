@@ -13,6 +13,7 @@
   "dependencies": {
     "@slack/web-api": "^6.8.0",
     "axios": "^1.2.6",
+    "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
     "node": "^18.13.0",
     "node-cron": "^3.0.2",
