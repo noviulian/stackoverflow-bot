@@ -41,11 +41,11 @@ client.once(Events.ClientReady, async (client) => {
     .setTimestamp();
   await channel.send({ embeds: [onlineEmbed] });
 
-  const task = cron.schedule("*/120 * * * *", async () => {
+  const task = cron.schedule("*/180 * * * *", async () => {
     console.log("task triggered");
 
     const current = Math.floor(new Date().getTime() / 1000);
-    const pastTime = current - 60 * 120; // 60 seconds * 120 minutes
+    const pastTime = current - 60 * 180; // 60 seconds * 120 minutes
     console.log(pastTime);
     let questions = [];
 
